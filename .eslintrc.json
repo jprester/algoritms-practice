@@ -1,0 +1,88 @@
+{
+    "root": true,
+
+    /*
+      @ available environments
+      browser node worker amd mocha jasmine phantomjs jquery prototypejs shelljs meteor es6
+    */
+    "env": {
+        "browser": true,
+        "amd": true,
+        "node": true
+    },
+
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+
+    // true for writable, false for readonly
+    "globals": {
+        "chai": true,
+        "webapis": false,
+        "amd": false
+    },
+
+    "rules": {
+        // possible errors
+        "no-global-assign": [2, { "exceptions": ["object"] }],
+
+        // best practices
+        "complexity": ["error", 15],
+        "comma-dangle": [2, "never"],
+        "default-case": 2,
+        "dot-notation": 2,
+        "eqeqeq": 2,
+        "guard-for-in": 2,
+        "no-array-constructor": 2,
+        "no-continue": 2,
+        "no-else-return": 2,
+        "no-floating-decimal": 2,
+        "no-labels": 2,
+        "no-lonely-if": 2,
+        "no-unneeded-ternary": 2,
+        "no-void": 2,
+        "valid-jsdoc": [1, { "prefer": { "return": "returns" } }],
+
+        // variables
+        "no-catch-shadow": 2,
+        "no-delete-var": 2,
+        "no-undef-init": 2,
+        "no-use-before-define": [2, "nofunc"],
+
+        // stylistic issues
+        "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+        "camelcase": 1,
+        "comma-spacing": [2, { "before": false, "after": true }],
+        "comma-style": [2, "last"],
+        "curly": [2, "all"],
+        "eol-last": 2,
+        "func-style": [1, "declaration", { "allowArrowFunctions": true }],
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "key-spacing": 2,
+        "keyword-spacing": [2, {"before": true, "after": true, "overrides": {}}],
+        "max-len": [2, 120, 4],
+        "new-cap": 2,
+        "new-parens": 2,
+        "newline-after-var": 2,
+        "newline-before-return": 2,
+        "no-extra-parens": [2, "all", { "nestedBinaryExpressions": false }],
+        "no-mixed-operators": 2,
+        "no-multi-spaces": 2,
+        "no-multiple-empty-lines": [2, { "max": 1 }],
+        "no-nested-ternary": 2,
+        "no-trailing-spaces": [2, { "skipBlankLines": false }],
+        "no-underscore-dangle": [1, { "allowAfterThis": true }],
+        "no-unused-expressions": 2,
+        "no-whitespace-before-property": 2,
+        "object-curly-spacing": [2, "always"],
+        "padded-blocks": [2, "never"],
+        "radix": 2,
+        "quotes": [2, "double"],
+        "semi": [2, "always"],
+        "space-before-blocks": 2,
+        "space-before-function-paren": [2, { "anonymous": "always", "named": "never" }],
+        "space-in-parens": [2, "never"],
+        "space-unary-ops": [1, { "words": true, "nonwords": false }],
+        "spaced-comment": [2, "always", { "exceptions": ["-"] }]
+    }
+}

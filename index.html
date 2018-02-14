@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Khan Academy - Algorithm Course (CS) - Janko Prester</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' type='text/css' href='css/style.css'>
+    </head>
+    <body>
+        <h1>Algorithm Course</h1>
+        <div id = "app">
+            <div class = "section">
+                <h3>Search algorithms</h3>
+                <p class = "algoritmsDesc">Input number from 1 to 100 to test if it is a prime number. You can choose between linear search or binary search algorithm.</p>
+                <input type = "text" id = "numTextBoxSearchAlgorithms" /> <br/>
+                <input type="radio" id = "radioButtonLinearSearch" name="searchAlgorithm" value="linear" checked> Linear Search<br>
+                <input type="radio" id = "radioButtonBinarySearch"  name="searchAlgorithm" value="binary"> Binary Search<br>
+                <button id = "checkNumButton">Check number</button> 
+                <p class = "resultBox" id = "resultTextBoxSearch"> </p>
+                <hr/>
+            </div>
+            
+
+            <div class = "section">
+                <h3>Sorting algorithms</h3>
+                <br/>
+                <h5>SELECTION SORT</h5>
+                <p class = "algoritmsDesc">Order this array of number from smallest to largest using selection sort</p>
+                <p class = "algoritmsDesc">[22, 11, 99, 88, 9, 7, 42]</p>
+                <button id = "sortNumbersButton">Sort array with selection sort</button>
+                <p class = "algoritmsDesc">Result: </p>
+                <p class = "resultBox" id = "resultTextBoxSort"> </p>
+                <br/>
+                <h5>INSERTION SORT</h5>
+                <p class = "algoritmsDesc">Specify range and value to be sorted in array</p>
+                <p class = "algoritmsDesc">[3, 5, 7, 11, 13, 2, 9, 6]</p>
+                <span>Input the sort range: </span><input type="text" id = "insertSortRightIndexInput"  name="insertionSort" > <br/>
+                <span>Input the value to be sorted: </span><input type="text" id = "insertSortValueInput"  name="insertionSort" > <br/>
+                <button id = "insertSortNumbersButton">Insert number and sort array</button>
+                <p class = "algoritmsDesc">Result: </p>
+                <p class = "resultBox" id = "resultTextBoxInsertSort"> </p>
+                <br/>
+                <p class = "algoritmsDesc">Order this array from smallest to largest using insertion sort</p>
+                <p class = "algoritmsDesc">[22, 11, 99, 88, 9, 7, 42]</p>
+                <button id = "insertionSortButton">Sort array with insertion sort</button>
+                <p class = "algoritmsDesc">Result: </p>
+                <p class = "resultBox" id = "resultTextBoxInsertionSort"> </p>
+                <hr/>
+            </div>
+
+            <div class = "section">
+                <h3>Recursive algorithms</h3>
+                <br/>
+                <p class = "algoritmsDesc">Iterative factorial- input the number to get the factorial </p>
+                <input type = "text" id = "numTextBoxIterativeFactorial" name = "recursiveAlgorithm" /> <br/>
+                <button id = "iterativeFactorialButton">Check factorial result</button>
+                <p class = "resultBox" id = "resultTextBoxIterativeFactorial"> </p>
+                <br/>
+                <h5>QUICK SORT</h5>
+                <p class = "algoritmsDesc">Order this array from smallest to largest using quick sort</p>
+                <p class = "algoritmsDesc">[3, 5, 7, 11, 13, 2, 9, 6]</p>
+                <button id = "quickSortButton">Sort array with quick sort</button>
+                <p class = "resultBox" id = "resultTextBoxQuicksort"> </p>
+            </div>
+        </div>
+
+        <script src = 'js/utils.js'></script>
+        <script src = 'js/constants.js'></script>
+        <script src = 'js/algorithms.js'></script>
+        <script src = 'js/app.js'></script>
+
+        <!-- Application start -->
+        <script>
+            App.init();
+        </script>
+    </body>
+</html>
